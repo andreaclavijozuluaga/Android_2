@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#252525"
+    tools:context=".verUsuario">
+
+    <TextView
+        android:id="@+id/tvUsuarioTitulo"
+        android:layout_width="246dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginBottom="5dp"
+        android:text="Usuarios Encontrados"
+        android:textAlignment="center"
+        android:textColor="#ffff"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvusuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvusuario"
+        android:layout_width="365dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="9dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#ffff"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUsuarioTitulo" />
+
+    <Button
+        android:id="@+id/btnRegresar"
+        android:layout_width="128dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/botones"
+        android:drawableLeft="@drawable/ic_rowprevius"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:onClick="regresar"
+        android:text="Regresar"
+        android:textAlignment="textStart"
+        android:textColor="@drawable/text_boton_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ListView
+        android:id="@+id/lvlista"
+        android:layout_width="363dp"
+        android:layout_height="391dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegresar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvusuario" />
+</androidx.constraintlayout.widget.ConstraintLayout>
